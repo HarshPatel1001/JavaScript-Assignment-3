@@ -1,0 +1,133 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+/* Heading styling */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Container styling */
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Task input section styling */
+.task-input {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#new-task {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Delete selected button styling */
+button#delete-selected-btn {
+    background-color: #dc3545;
+    display: none;
+}
+
+button#delete-selected-btn:hover {
+    background-color: #c82333;
+}
+
+/* Individual delete button styling */
+button.delete-btn {
+    background-color: #dc3545;
+    margin-left: auto;
+}
+
+button.delete-btn:hover {
+    background-color: #c82333;
+}
+
+/* Edit button styling */
+button.edit-btn {
+    background-color: #ffc107;
+    margin-left: 10px;
+}
+
+button.edit-btn:hover {
+    background-color: #e0a800;
+}
+
+/* Buttons container styling */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Task list styling */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Task item styling */
+li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: grab;
+}
+
+li.completed {
+    background-color: #d4edda;
+}
+
+li.completed span {
+    text-decoration: line-through;
+}
+
+/* Checkbox styling */
+li input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Dragging task item styling */
+li.dragging {
+    opacity: 0.5;
+}
